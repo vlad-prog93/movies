@@ -1,0 +1,9 @@
+.logo-account {
+  width: 26px;
+  height: 30px;
+  background: #313131;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
