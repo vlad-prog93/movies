@@ -31,59 +31,57 @@ const Header = () => {
 
   return (
     <>
-      <Container>
-        <header className='header'>
-          <NavLink to={ROUTES.home}><Logo /></NavLink>
-          <nav className='header__nav'>
-            {isAuth
-              ? <ul className='header__list'>
-                <li className='header__item'>
-                  <NavLink
-                    className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
-                    to={ROUTES.movies}>
-                    Фильмы
-                  </NavLink>
-                </li>
-                <li className='header__item'>
-                  <NavLink
-                    className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
-                    to={ROUTES.savedMovies}>
-                    Сохраненные фильмы
-                  </NavLink>
-                </li>
-                <li className='header__item header__item_account'>
-                  <NavLink
-                    className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
-                    to={ROUTES.profile}>
-                    Аккаунт
-                    <LogoAccount />
-                  </NavLink>
-                </li>
-              </ul>
-              : <ul className='header__list-auth'>
-                <li className='header__item-auth'>
-                  <NavLink
-                    className='header__link-auth'
-                    to={ROUTES.register}>
-                    Регистрация
-                  </NavLink>
-                </li>
-                <li className='header__item-auth' onClick={e => setIsAuth(true)}>
-                  <NavLink
-                    className='header__link-auth'
-                    to={ROUTES.login}>
-                    Войти
-                  </NavLink>
-                </li>
-              </ul>}
-          </nav>
-          {isAuth && <Burger
-            onClick={() => handleActiveBurger()}
-            isActive={isActive}
-          />}
-        </header>
+      <header className='header'>
+        <NavLink to={ROUTES.home}><Logo /></NavLink>
+        <nav className='header__nav'>
+          {isAuth
+            ? <ul className='header__list'>
+              <li className='header__item'>
+                <NavLink
+                  className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
+                  to={ROUTES.movies}>
+                  Фильмы
+                </NavLink>
+              </li>
+              <li className='header__item'>
+                <NavLink
+                  className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
+                  to={ROUTES.savedMovies}>
+                  Сохраненные фильмы
+                </NavLink>
+              </li>
+              <li className='header__item header__item_account'>
+                <NavLink
+                  className={({ isActive }) => isActive ? 'header__link header__link_active' : 'header__link'}
+                  to={ROUTES.profile}>
+                  Аккаунт
+                  <LogoAccount />
+                </NavLink>
+              </li>
+            </ul>
+            : <ul className='header__list-auth'>
+              <li className='header__item-auth'>
+                <NavLink
+                  className='header__link-auth'
+                  to={ROUTES.register}>
+                  Регистрация
+                </NavLink>
+              </li>
+              <li className='header__item-auth' onClick={e => setIsAuth(true)}>
+                <NavLink
+                  className='header__link-auth'
+                  to={ROUTES.login}>
+                  Войти
+                </NavLink>
+              </li>
+            </ul>}
+        </nav>
+        {isAuth && <Burger
+          onClick={() => handleActiveBurger()}
+          isActive={isActive}
+        />}
+      </header>
 
-      </Container >
       {isAuth && <BurgerMenu isActive={isActive} closeMenu={() => dispatch(toDiactive())} />}
     </>
   )

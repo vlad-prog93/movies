@@ -1,9 +1,18 @@
+import Intro from '../components/Intro'
+import Project from '../components/Project'
+import Student from '../components/Student'
+import Techs from '../components/Techs'
 import './Home.css'
 
 
 const Home = () => {
   return (
-    <h1>Home</h1>
+    <main className='home'>
+      <Intro />
+      <Project />
+      <Techs />
+      <Student />
+    </main>
   )
 }
 

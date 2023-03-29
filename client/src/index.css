@@ -2,7 +2,7 @@
 @import url(./vendor/fonts.css);
 
 body {
-  --color-bg-black: #020202;
+  --color-bg-black: #202020;
   --color-bg-grey: #272727;
 
   --color-item-grey: #303030;
@@ -24,9 +24,11 @@ body {
   --color-bg-burger-menu: #00000090;
   --color-bg-burger-menu-main: #202020;
 
+
   margin: 0 auto;
   height: 100%;
   max-width: 1280px;
+  width: 100%;
   min-width: 320px;
   background-color: var(--color-bg-black);
   font-family: 'Inter', 'Arial', sans-serif;
