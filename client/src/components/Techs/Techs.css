@@ -1,5 +1,6 @@
 .techs {
   width: 100%;
+  margin-bottom: 111px;
   padding: 85px 0 100px;
   background-color: var(--color-bg-grey);
 }
@@ -7,16 +8,14 @@
 @media all and (max-width: 780px) {
   .techs {
     padding: 76px 22px 88px;
-  }
-
-  .techs {
-    padding: 37px 3px 55px;
+    margin-bottom: 91px;
   }
 }
 
 @media all and (max-width: 525px) {
   .techs {
     padding: 37px 3px 55px;
+    margin-bottom: 82px;
   }
 }
 

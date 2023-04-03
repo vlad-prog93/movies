@@ -11,7 +11,7 @@ const Home = () => {
       <Intro />
       <Project />
       <Techs />
-      {/* <Student /> */}
+      <Student />
     </main>
   )
 }
