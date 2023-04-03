@@ -29,3 +29,15 @@
 .navbar__link:hover {
   color: var(--color-font-grey);
 }
+
+@media all and (max-width: 525px) {
+  .navbar {
+    gap: 6px;
+  }
+
+  .navbar__link {
+    padding: 5px 15px;
+
+    font-size: 12px;
+  }
+}

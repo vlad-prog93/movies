@@ -8,3 +8,13 @@
   letter-spacing: -0.04em;
   color: inherit;
 }
+
+
+@media all and (max-width: 525px) {
+  .title {
+    padding-bottom: 28px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,12 +1,10 @@
 .header {
-  margin: 18px 70px;
-  max-width: 1140px;
+  margin: 18px auto 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-font-white);
 
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -20,7 +18,7 @@
 
 .header__list-auth {
   display: flex;
-  align-items: center;
+  margin: 0;
   gap: 10px;
   list-style-type: none;
 }
@@ -34,6 +32,7 @@
 .header__item-auth:hover {
   background-color: var(--color-bg-button-active);
 }
+
 
 .header__item {
   display: flex;
@@ -74,9 +73,26 @@
   color: var(--color-font-grey);
 }
 
-
 @media all and (max-width: 780px) {
   .header__list {
     display: none;
+  }
+}
+
+
+@media all and (max-width: 525px) {
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .header__list-auth {
+    gap: 2px;
+  }
+
+  .header__link-auth {
+    padding: 5px 12px;
+
+    font-size: 10px;
+    line-height: 16px;
   }
 }

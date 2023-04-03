@@ -2,6 +2,12 @@
   padding: 110px 0;
 }
 
+@media all and (max-width: 780px) {
+  .project {
+    padding: 90px 0;
+  }
+}
+
 .project__list {
 
   display: flex;
@@ -12,9 +18,16 @@
   list-style-type: none;
   padding: 0;
 
-  margin-bottom: 110px;
+  margin: 70px auto 110px;
 
 }
+
+@media all and (max-width: 780px) {
+  .project__list {
+    margin: 70px auto 93px;
+  }
+}
+
 
 .project__item {
   flex-basis: 50%;
@@ -34,6 +47,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media all and (max-width: 780px) {
+  .project__item-desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 

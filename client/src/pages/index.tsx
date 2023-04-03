@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <main className='home'>
       <Intro />
-      <Project />
-      <Techs />
-      <Student />
+      {/* <Project /> */}
+      {/* <Techs />
+      <Student /> */}
     </main>
   )
 }
