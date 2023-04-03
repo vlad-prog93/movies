@@ -12,7 +12,8 @@
 .navbar__item {}
 
 .navbar__link {
-  padding: 10px 17px;
+  padding: 10px 0;
+  min-width: 96px;
 
   display: block;
   text-decoration: none;
@@ -22,6 +23,7 @@
   font-size: 12px;
   line-height: 16px;
   color: inherit;
+  text-align: center;
 
   cursor: pointer;
 }
@@ -37,7 +39,7 @@
 
   .navbar__link {
     padding: 5px 15px;
-
-    font-size: 12px;
+    font-size: 10px;
+    min-width: 82px;
   }
 }

@@ -1,33 +1,41 @@
-.project {
-  padding: 110px 0;
-}
-
-@media all and (max-width: 780px) {
-  .project {
-    padding: 90px 0;
-  }
-}
+.project {}
 
 .project__list {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 
   list-style-type: none;
   padding: 0;
 
-  margin: 70px auto 110px;
+  margin: 70px auto 95px;
 
 }
 
 @media all and (max-width: 780px) {
+  .project {
+    padding: 0 20px;
+  }
+
   .project__list {
-    margin: 70px auto 93px;
+    margin: 70px auto 78px;
+    gap: 38px;
   }
 }
 
+@media all and (max-width: 525px) {
+  .project {
+    padding: 0 3px;
+  }
+
+  .project__list {
+    margin: 60px auto 45px;
+    flex-direction: column;
+    gap: 41px 0;
+  }
+}
 
 .project__item {
   flex-basis: 50%;
@@ -41,7 +49,24 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.04em;
+
+  margin-bottom: 25px;
 }
+
+@media all and (max-width: 780px) {
+  .project__item-title {
+    margin-bottom: 22px;
+  }
+}
+
+@media all and (max-width: 525px) {
+  .project__item-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+}
+
 
 .project__item-desc {
   font-weight: 400;
@@ -56,10 +81,16 @@
   }
 }
 
+@media all and (max-width: 525px) {
+  .project__item-desc {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
 
 .project__list-cal {
   display: flex;
-  gap: 5px 0;
 
   list-style-type: none;
   padding: 0;
@@ -69,6 +100,7 @@
 .project__item-cal {
   display: flex;
   flex-direction: column;
+  gap: 6px 0;
 }
 
 .project__item-cal:first-of-type {
@@ -78,6 +110,27 @@
 .project__item-cal:last-of-type {
   flex-basis: 80%;
 }
+
+@media all and (max-width: 780px) {
+  .project__item-cal {
+    gap: 5px 0;
+  }
+
+  .project__item-cal:first-of-type {
+    flex-basis: 21%;
+  }
+}
+
+@media all and (max-width: 525px) {
+  .project__item-cal {
+    gap: 2px 0;
+  }
+
+  .project__item-cal:first-of-type {
+    flex-basis: 44%;
+  }
+}
+
 
 .project__week {
   margin: 0;
@@ -97,6 +150,16 @@
   text-align: center;
 
   color: var(--color-font-grey);
+}
+
+@media all and (max-width: 525px) {
+
+  .project__job,
+  .project__week {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 10px 14px;
+  }
 }
 
 .project__item-cal:first-of-type .project__week {

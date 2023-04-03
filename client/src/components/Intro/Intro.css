@@ -6,22 +6,24 @@
 
   padding-top: 160px;
   padding-bottom: 30px;
-  margin: 0 auto;
+  margin: 0 auto 110px;
 }
 
 .intro__title {
-  margin-bottom: 151px;
+  margin: 0 auto 151px;
+  max-width: 730px;
 
   font-weight: 400;
   font-size: 50px;
   line-height: 58px;
+  letter-spacing: -0.04em;
   color: white;
   text-align: center;
 }
 
 @media all and (max-width: 1024px) {
   .intro {
-    margin: 0 20px;
+    width: 95%;
   }
 
   .intro__title {
@@ -34,6 +36,9 @@
   .intro {
     padding-top: 350px;
     padding-bottom: 30px;
+    max-width: 730px;
+
+    margin: 0 auto 90px;
   }
 
   .intro__title {
@@ -43,8 +48,10 @@
 
 @media all and (max-width: 525px) {
   .intro {
+    margin: 0 auto 71px;
     padding-top: 220px;
     padding-bottom: 17px;
+    width: 91%;
   }
 
   .intro__title {
@@ -53,6 +60,6 @@
     text-align: center;
     letter-spacing: -0.04em;
 
-    margin: 0 14px 212px;
+    margin: 0 0 212px;
   }
 }
