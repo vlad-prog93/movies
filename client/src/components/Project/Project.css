@@ -1,4 +1,6 @@
-.project {}
+.project {
+  margin-bottom: 101px;
+}
 
 .project__list {
 
@@ -17,6 +19,7 @@
 @media all and (max-width: 780px) {
   .project {
     padding: 0 20px;
+    margin-bottom: 81px;
   }
 
   .project__list {
