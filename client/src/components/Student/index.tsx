@@ -1,12 +1,12 @@
 // components
-import Container from '../Container'
+import Container from 'components/Container'
 import Title from '../Title'
 
 // styles
 import './Student.css'
 
 // images
-import avatar from '../../images/avatar.jpg'
+import avatar from 'images/avatar.jpg'
 
 const Student = () => {
 
@@ -14,7 +14,7 @@ const Student = () => {
   return (
     <section className='student'>
       <Container>
-        <Title id='student' title='Студент' />
+        <Title id='student' title='Обо мне' />
         <div className="student__info">
           <div className="student__text">
             <h3 className="student__title">Владислав</h3>

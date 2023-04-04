@@ -5,11 +5,11 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // pages
-import Home from './pages'
-import Profile from './pages/Profile'
-import Movies from './pages/Movies'
-import SavedMovies from './pages/SavedMovies'
-import Auth from './pages/Auth'
+import Home from 'pages'
+import Profile from 'pages/Profile'
+import Movies from 'pages/Movies'
+import SavedMovies from 'pages/SavedMovies'
+import Auth from 'pages/Auth'
 
 // components
 import Layout from './components/Layout'

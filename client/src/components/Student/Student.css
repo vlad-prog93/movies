@@ -1,5 +1,5 @@
 .student {
-  padding: 0 0 100px;
+  margin-bottom: 100px;
 }
 
 .student__info {
@@ -60,7 +60,8 @@
 
 @media all and (max-width: 780px) {
   .student {
-    padding: 0 21px 100px;
+    padding: 0 21px 0;
+    margin-bottom: 90px;
   }
 
   .student__title {
@@ -94,7 +95,8 @@
 
 @media all and (max-width: 525px) {
   .student {
-    padding: 0 0 100px;
+    padding: 0;
+    margin-bottom: 70px;
   }
 
   .student__info {
