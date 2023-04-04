@@ -1,5 +1,5 @@
-// node_modules
-import Container from '../Container'
+// components
+import Container from 'components/Container'
 
 // styles
 import './Footer.css'

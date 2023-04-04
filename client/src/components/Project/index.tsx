@@ -1,6 +1,6 @@
 // components
-import Container from '../Container'
-import Title from '../Title'
+import Container from 'components/Container'
+import Title from 'components/Title'
 
 // styles
 import './Project.css'

@@ -1,6 +1,6 @@
 
 // components
-import NavBar from "../NavBar"
+import NavBar from "components/NavBar"
 
 // styles
 import './Intro.css'

@@ -2,13 +2,13 @@
 import { NavLink } from 'react-router-dom'
 
 // components
-import LogoAccount from '../LogoAccount'
+import LogoAccount from 'components/LogoAccount'
 
 // styles
 import './BurgerMenu.css'
 
 // utils
-import { ROUTES } from '../../utils/const'
+import { ROUTES } from 'utils/const'
 
 interface BurgerMenuPropsI {
   isActive: boolean,

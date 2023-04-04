@@ -3,21 +3,21 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 // components
-import Container from '../Container'
-import Logo from '../Logo'
-import LogoAccount from '../LogoAccount'
-import Burger from '../Burger'
-import BurgerMenu from '../BurgerMenu'
+import Container from 'components/Container'
+import Logo from 'components/Logo'
+import LogoAccount from 'components/LogoAccount'
+import Burger from 'components/Burger'
+import BurgerMenu from 'components/BurgerMenu'
 
 // styles
 import './Header.css'
 
 // utils
-import { ROUTES } from '../../utils/const'
+import { ROUTES } from 'utils/const'
 
 // BLL
-import { useAppSelector, useAppDispatch } from '../../hooks/store'
-import { toActive, toDiactive } from '../../store/reducers/burgerReducer'
+import { useAppSelector, useAppDispatch } from 'hooks/store'
+import { toActive, toDiactive } from 'store/reducers/burgerReducer'
 
 const Header = () => {
   const [isAuth, setIsAuth] = useState<boolean>(false)

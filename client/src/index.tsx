@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
 
 // components
-import App from './App'
+import App from 'App'
 
 // styles
-import './index.css'
+import 'index.css'
 
 // redux
 import { store } from './store';

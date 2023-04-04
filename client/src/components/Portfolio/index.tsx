@@ -1,14 +1,14 @@
 // components
-import Container from '../Container'
+import Container from 'components/Container'
 
 // styles
 import './Portfolio.css'
 
 // images
-import imgStaticSite from '../../images/научиться_учиться.gif'
-import imgAdaptiveSite from '../../images/путешествие_по_России.gif'
-import imgApplication from '../../images/одностраничное_приложение.gif'
-import imgCloud from '../../images/облачное_хранилище.png'
+import imgStaticSite from 'images/научиться_учиться.gif'
+import imgAdaptiveSite from 'images/путешествие_по_России.gif'
+import imgApplication from 'images/одностраничное_приложение.gif'
+import imgCloud from 'images/облачное_хранилище.png'
 
 const Portfolio = () => {
   return (
