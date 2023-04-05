@@ -1,9 +1,14 @@
+import Search from 'components/Search'
 import './SavedMovies.css'
+import Container from 'components/Container'
 
 
 const SavedMovies = () => {
   return (
-    <h1>SavedMovies</h1>
+    <Container>
+      <Search />
+    </Container>
+
   )
 }
 
