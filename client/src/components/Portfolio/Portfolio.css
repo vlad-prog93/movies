@@ -3,19 +3,6 @@
   margin-bottom: 79px;
 }
 
-@media all and (max-width: 780px) {
-  .portfolio {
-    padding-bottom: 90px;
-  }
-}
-
-@media all and (max-width: 525px) {
-  .portfolio {
-    padding-bottom: 70px;
-    margin-bottom: 79px;
-  }
-}
-
 .portfolio__title {
   font-weight: 400;
   font-size: 18px;
@@ -44,14 +31,31 @@
   display: none;
 }
 
+/* стилизация заголовка проекта */
 .portfolio__label {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--color-bg-black);
 
   cursor: pointer;
+  z-index: 10;
 }
 
+.portfolio__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+
+  margin: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* стилизация стрелочки */
 .arrow {
   position: relative;
   cursor: pointer;
@@ -95,18 +99,79 @@
   transition: .5s;
 }
 
-.portfolio__subtitle {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 50px;
-  letter-spacing: -0.04em;
-
-  margin: 0;
-  cursor: pointer;
-  transition: .2s;
+/* стилизация при наведении мыши на заголовок проекта */
+.portfolio__label:hover .portfolio__subtitle,
+.portfolio__subtitle:hover {
+  color: var(--color-font-grey);
 }
 
+.portfolio__label:hover .arrow-right:after,
+.portfolio__label:hover .arrow-left:after {
+  background-color: var(--color-font-grey);
+}
+
+/* стилизация содержания проекта */
+.portfolio__contain-info {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  margin-top: 19px;
+  gap: 20px;
+  transition: all .5s ease;
+
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* стилизация скроллбара */
+.portfolio__contain-info::-webkit-scrollbar {
+  width: 0;
+}
+
+/* стилизация картинки */
+.portfolio__img-cont {
+  flex-basis: 50%;
+}
+
+.portfolio__img-cont img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* стилизация содержания, стрелочки при активном чекбоксе */
+.portfolio__input:checked~.portfolio__contain-info {
+  max-height: 0;
+  transition: all .5s ease;
+}
+
+.portfolio__input:checked~.portfolio__label .arrow-right:after {
+  transform: rotate(90deg);
+}
+
+/* стилизация ссылки */
+.portfolio__text-link {
+  margin-top: 15px;
+}
+
+.portfolio__link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.portfolio__link:hover {
+  color: var(--color-font-grey)
+}
+
+
 @media all and (max-width: 780px) {
+  .portfolio {
+    padding-bottom: 90px;
+  }
+
   .portfolio__subtitle {
     font-size: 28px;
     line-height: 50px;
@@ -114,6 +179,11 @@
 }
 
 @media all and (max-width: 525px) {
+  .portfolio {
+    padding-bottom: 70px;
+    margin-bottom: 79px;
+  }
+
   .portfolio__subtitle {
     font-size: 18px;
     line-height: 28px;
@@ -128,63 +198,4 @@
     width: 15px;
     height: 15px;
   }
-}
-
-.portfolio__label:hover .portfolio__subtitle,
-.portfolio__subtitle:hover {
-  color: var(--color-font-grey);
-}
-
-.portfolio__label:hover .arrow-right:after,
-.portfolio__label:hover .arrow-left:after {
-  background-color: var(--color-font-grey);
-}
-
-.portfolio__contain-info {
-  position: relative;
-
-  display: flex;
-  margin-top: 19px;
-  gap: 20px;
-  transition: all .5s ease;
-
-  transform: scaleY(1);
-  height: 100%;
-}
-
-.portfolio__img-cont {
-  flex-basis: 50%;
-}
-
-.portfolio__img-cont img {
-  border-radius: 5px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.portfolio__input:checked~.portfolio__contain-info {
-  transform: scaleY(0);
-  transform: translateY(1000px);
-  height: 0;
-  transition: all .5s ease;
-}
-
-
-.portfolio__input:checked~.portfolio__label .arrow-right:after {
-  transform: rotate(90deg);
-}
-
-.portfolio__text-link {
-  margin-top: 15px;
-}
-
-.portfolio__link {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.portfolio__link:hover {
-  color: var(--color-font-grey)
 }

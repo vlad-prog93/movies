@@ -16,7 +16,7 @@ const NavBar = () => {
       </li>
       <li className="navbar__item">
         <a href="#student" className="navbar__link">
-          Студент
+          Обо мне
         </a>
       </li>
     </ul>
