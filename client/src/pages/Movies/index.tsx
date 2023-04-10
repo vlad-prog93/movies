@@ -4,6 +4,7 @@ import Search from 'components/Search'
 
 // styles
 import './Movies.css'
+import CardList from 'components/CardList'
 
 
 const Movies = () => {
@@ -11,6 +12,7 @@ const Movies = () => {
     <section className='movies'>
       <Container>
         <Search />
+        <CardList />
       </Container>
     </section>
   )

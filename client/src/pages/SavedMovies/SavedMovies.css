@@ -1,0 +1,6 @@
+.saved-movies {
+  flex-grow: 1;
+  width: 100%;
+
+  margin: 80px auto 0;
+}
