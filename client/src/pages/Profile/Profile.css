@@ -105,3 +105,22 @@
   background: inherit;
   border: none;
 }
+
+@media all and (max-width: 525px) {
+  .profile__form {
+    min-width: 260px;
+  }
+
+  .profile__input {
+    padding: 0;
+
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .profile__button-edit,
+  .profile__button-exit {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
