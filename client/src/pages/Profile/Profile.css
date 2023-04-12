@@ -17,16 +17,21 @@
   min-width: 410px;
 }
 
-.profile__label {
+.profile__group {
   position: relative;
-  display: block;
+}
+
+.profile__label {
+  position: absolute;
+  top: 18px;
+  left: 15px;
 
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
   color: var(--color-font-grey);
 
-  margin-bottom: 10px;
+  transition: top .3s ease-in-out;
 }
 
 .profile__input {
@@ -57,8 +62,10 @@
   margin-bottom: 0px;
 }
 
-.profile__input:disabled+.profile__label {
-  transform: translateY(25px);
+.profile__input:not(:disabled)~.profile__label {
+  top: -5px;
+  background-color: inherit;
+  border-radius: 2px;
 }
 
 .profile__line {
