@@ -34,41 +34,6 @@
   transition: top .3s ease-in-out;
 }
 
-/* .profile__input {
-  width: 100%;
-  padding: 15px;
-
-  font-size: 13px;
-  line-height: 16px;
-  color: white;
-
-  background: var(--color-bg-input);
-  border: 0;
-  border-radius: 8px;
-  outline: none;
-
-  margin-bottom: 30px;
-  transition: background .3s ease-in 0s;
-}
-
-.profile__input:disabled {
-  text-align: right;
-
-  background: inherit;
-}
-
-.profile__input:disabled:first-of-type {
-  padding-bottom: 16px;
-  margin-bottom: 0px;
-}
-
-.profile__input:not(:disabled)~.profile__label {
-  top: -22px;
-  left: 0;
-  background-color: inherit;
-  border-radius: 2px;
-} */
-
 .profile__line {
   height: 1px;
   width: 100%;

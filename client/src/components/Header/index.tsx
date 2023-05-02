@@ -20,7 +20,7 @@ import { useAppSelector, useAppDispatch } from 'hooks/store'
 import { toActive, toDiactive } from 'store/reducers/burgerReducer'
 
 const Header = () => {
-  const [isAuth, setIsAuth] = useState<boolean>(true)
+  const [isAuth, setIsAuth] = useState<boolean>(false)
   const isActive = useAppSelector(state => state.burger.isActive)
   const dispatch = useAppDispatch()
 
