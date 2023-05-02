@@ -1,0 +1,19 @@
+.mylabel {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--color-font-grey);
+
+  transition: top .3s ease-in-out;
+}
+
+.myinput:not(:disabled)~.mylabel {
+  top: -22px;
+  left: 0;
+  background-color: inherit;
+  border-radius: 2px;
+}

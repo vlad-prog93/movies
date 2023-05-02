@@ -5,6 +5,10 @@ import { useState } from 'react'
 import Header from 'components/Header'
 import './Profile.css'
 
+// UI
+import MyInput from 'UI/MyInput'
+import MyLabel from 'UI/MyLabel'
+
 const Profile = () => {
   const [isEdit, setIsEdit] = useState<boolean>(false)
   const [name, setName] = useState<string>('Владислав')
@@ -17,27 +21,25 @@ const Profile = () => {
         <h2 className='profile__title'>Привет, Владислав!</h2>
         <form className='profile__form'>
           <div className='profile__group'>
-            <input
+            <MyInput
               id='profile-name'
-              className='profile__input'
               type='text'
               disabled={isEdit}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <label className='profile__label' htmlFor='profile-name'>Имя</label>
+            <MyLabel text='Имя' htmlFor='profile-name' />
           </div>
           {isEdit && <div className='profile__line' />}
           <div className='profile__group'>
-            <input
+            <MyInput
               id='profile-email'
-              className='profile__input'
               type='email'
               disabled={isEdit}
               value={mail}
               onChange={(e) => setMail(e.target.value)}
             />
-            <label className='profile__label' htmlFor='profile-email'>E-mail</label>
+            <MyLabel text='E-mail' htmlFor='profile-email' />
           </div>
           <div className='profile__button-con'>
             <button type='button' className='profile__button-edit' onClick={() => setIsEdit(prev => !prev)}>

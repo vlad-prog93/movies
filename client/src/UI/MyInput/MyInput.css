@@ -1,0 +1,27 @@
+.myinput {
+  width: 100%;
+  padding: 15px;
+
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+
+  background: var(--color-bg-input);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+
+  margin-bottom: 30px;
+  transition: background .3s ease-in 0s;
+}
+
+.myinput:disabled {
+  text-align: right;
+
+  background: inherit;
+}
+
+.myinput:disabled:first-of-type {
+  padding-bottom: 16px;
+  margin-bottom: 0px;
+}

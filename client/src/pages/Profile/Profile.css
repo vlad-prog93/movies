@@ -34,7 +34,7 @@
   transition: top .3s ease-in-out;
 }
 
-.profile__input {
+/* .profile__input {
   width: 100%;
   padding: 15px;
 
@@ -47,7 +47,7 @@
   border-radius: 8px;
   outline: none;
 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   transition: background .3s ease-in 0s;
 }
 
@@ -63,10 +63,11 @@
 }
 
 .profile__input:not(:disabled)~.profile__label {
-  top: -5px;
+  top: -22px;
+  left: 0;
   background-color: inherit;
   border-radius: 2px;
-}
+} */
 
 .profile__line {
   height: 1px;
