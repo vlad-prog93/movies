@@ -20,7 +20,7 @@ const Auth = () => {
 
   return (
     <section className='auth'>
-      <Logo />
+      <Link to={ROUTES.home}><Logo /></Link>
       {isPageRegister
         ? <h1 className='auth__title'>Добро пожаловать!</h1>
         : <h1 className='auth__title'>Рады видеть!</h1>}
