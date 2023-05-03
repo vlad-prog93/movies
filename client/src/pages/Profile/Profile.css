@@ -14,7 +14,7 @@
 }
 
 .profile__form {
-  min-width: 410px;
+  width: 410px;
 }
 
 .profile__group {
@@ -73,8 +73,12 @@
 }
 
 @media all and (max-width: 525px) {
+  .profile {
+    width: 81.25%;
+  }
+
   .profile__form {
-    min-width: 260px;
+    width: 100%;
   }
 
   .profile__input {
